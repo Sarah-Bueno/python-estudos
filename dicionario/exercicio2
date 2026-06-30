@@ -1,0 +1,35 @@
+"""
+Faça um programa em Python para cadastrar os veículos de uma locadora de
+automóveis. Inicialmente, o programa deve solicitar o cadastro dos veículos e,
+ao final, exibir todos os veículos cadastrados. Para cada veículo, representado
+por um dicionário, devem ser cadastradas as seguintes informações:
+▪ Placa;
+▪ Marca;
+▪ Modelo;
+▪ Cor.
+Quando o usuário informar “0” como placa, o cadastro deve ser encerrado e
+os veículos devem ser listados.
+Dica: Utilize uma lista (cadastro da locadora) e dicionários (como veículos)
+para resolver o problema.
+"""
+
+P = input("informe a placa: ")
+
+A = []
+
+while P != 0:
+
+    MA = input("informe a marca: ")
+    MO = input("informe a modelo: ")
+    C = input("informe a cor: ")
+
+    V = {"placa": P,
+         "marca": MA,
+         "modelo": MO,
+         "cor": C
+         }
+    A.append(V)
+    P = input("informe a placa: ")
+
+for item in A:
+    print(item)
